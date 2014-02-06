@@ -11,7 +11,7 @@ namespace NutsAndBolts
     {
         static void Main(string[] args)
         {
-            var lines = File.ReadAllLines(@"input.txt");
+            var lines = File.ReadAllLines("input.txt");
             var listLenght = int.Parse(lines[0]);
             var list = new Dictionary<string, int>();        
 
@@ -23,6 +23,7 @@ namespace NutsAndBolts
 
                 if (list.ContainsKey(key))
                 {
+                    
                     var listValue = list[key];
                     if ((value - listValue) != 0)
                     {
