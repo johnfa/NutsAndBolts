@@ -11,7 +11,7 @@ namespace NutsAndBolts
     {
         static void Main(string[] args)
         {
-            var lines = File.ReadAllLines(@"C:\Users\johnfredrik\Documents\Visual Studio 2013\Projects\NutsAndBolts\NutsAndBolts\bin\Debug\input.txt");
+            var lines = File.ReadAllLines(@"input.txt");
             var listLenght = int.Parse(lines[0]);
             var list = new Dictionary<string, int>();        
 
